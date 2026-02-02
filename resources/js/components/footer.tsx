@@ -50,7 +50,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className=' flex justify-center flex-col items-center gap-4 py-4'>
-                <hr className='w-4xl border  border-gray-600' />
+                <hr className='max-w-4xl border  border-gray-600' />
                 <p>&copy; 2026 BFI Education Services' Developer</p>
             </div>
         </div>

@@ -41,3 +41,11 @@ export interface User {
     updated_at: string;
     [key: string]: unknown; // This allows for additional properties...
 }
+export type carouselDataType = {
+    banner_image: string;
+    top_sub_title: string;
+    title: string;
+    bottom_sub_title: string;
+    routeLink?: string;
+    lastTitle?: string;
+};

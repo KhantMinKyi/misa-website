@@ -29,6 +29,8 @@
         html.dark {
             background-color: oklch(0.145 0 0);
         }
+
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
 
     <title inertia>{{ config('app.name', 'Laravel') }}</title>

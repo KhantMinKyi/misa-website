@@ -39,7 +39,7 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
 
             {/* 2. STICKY NAV BAR (Stays fixed) */}
             {/* This is now OUTSIDE the top div. It will stick because its parent is the main page wrapper. */}
-            <nav className='bg-gray-900 text-white sticky top-0 z-50 w-full shadow-lg '>
+            <nav className='bg-gray-900 text-white sticky top-0 z-50 w-full shadow-lg  hidden md:block'>
                 <div className='flex justify-center uppercase '>
                     <ul className='flex items-center justify-center h-20 '>
                         <li className='  '>
@@ -129,7 +129,7 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
             </nav>
 
             {/* 3. MAIN CONTENT */}
-            <div className="flex w-full h-screen flex-col items-center justify-center opacity-100 transition-opacity duration-750 lg:grow">
+            <div className='w-full'>
                 {children}
             </div>
 
