@@ -59,16 +59,16 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                                         <Link href="/our-mission-and-vision" className='block px-4 py-3'> Mission & Vision</Link>
                                     </li>
                                     <li className='border-b border-gray-700 hover:text-brand'>
-                                        <Link href="#" className='block px-4 py-3'> Philosophy</Link>
+                                        <Link href="/our-philosophy" className='block px-4 py-3'> Philosophy</Link>
                                     </li>
                                     <li className='border-b border-gray-700 hover:text-brand'>
                                         <Link href="#" className='block px-4 py-3'> Teachers</Link>
                                     </li>
                                     <li className='border-b border-gray-700 hover:text-brand'>
-                                        <Link href="#" className='block px-4 py-3'>Sister Scools</Link>
+                                        <Link href="/sister-schools" className='block px-4 py-3'>Sister Scools</Link>
                                     </li>
                                     <li className='border-b border-gray-700 hover:text-brand'>
-                                        <Link href="#" className='block px-4 py-3'>Admin Team</Link>
+                                        <Link href="/admin-team" className='block px-4 py-3'>Admin Team</Link>
                                     </li>
                                     <li className='border-b border-gray-700 hover:text-brand'>
                                         <Link href="#" className='block px-4 py-3'>School Profile</Link>
