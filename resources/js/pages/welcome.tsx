@@ -13,26 +13,6 @@ import { CategoryTag, Post, type SharedData } from '@/types';
 import { Head, Link, usePage } from '@inertiajs/react';
 import { useState } from 'react';
 
-const carouselData = [
-    {
-        banner_image: '/img/banner/banner_1.webp',
-        title: 'BFI',
-        bottom_sub_title: 'EDUCATION SERVIES',
-        top_sub_title: '9 Group of Schools',
-    },
-    {
-        banner_image: '/img/banner/banner_2.webp',
-        title: 'Inspiring Brilance',
-        bottom_sub_title: 'Building Brighter Futures.',
-        top_sub_title: '90% Foreign Teachers',
-    },
-    {
-        banner_image: '/img/banner/banner_1.webp',
-        title: 'WORLD-CLASS EDUCATION IN A',
-        bottom_sub_title: 'SAFE AND FRIENDLY ENVIRONMENT',
-        top_sub_title: 'The IB Diploma Programme',
-    },
-];
 const myImages = [
     { id: 1, src: "/img/banner/banner_1.webp", alt: "Students in Library" },
     { id: 2, src: "/img/banner/banner_2.webp", alt: "Sports Day" },
@@ -47,7 +27,7 @@ const myImages = [
 export default function Welcome({ posts, category_tags }: { posts: Post[], category_tags: CategoryTag[] }) {
     const postsData = posts;
     const categoryTagData = category_tags;
-    const { auth } = usePage<SharedData>().props;
+ 
 
     return (
         <>
