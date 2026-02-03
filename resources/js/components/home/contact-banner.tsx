@@ -10,7 +10,7 @@ function ContactBanner() {
         >
             {/* Overlay */}
             {/* <div className="absolute inset-0 bg-blue-950/60" /> */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 to-green-800/60 dark:from-blue-950/90 dark:to-green-950/90" />
+            <div className="absolute inset-0 bg-gradient-to-r bg-brand-core" />
             {/* Content */}
             <motion.div
                 className="orico-about-text-wrap 111"

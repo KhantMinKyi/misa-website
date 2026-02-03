@@ -60,7 +60,7 @@ const PostGrid: React.FC<PostGridProps> = ({ posts, categories, onPostClick, onF
                     <button
                         key={cat.id}
                         onClick={() => handleFilterChange(cat.id)}
-                        className={`cursor-pointer px-4 py-2 font-semibold transition hover:text-yellow-800 ${selectedCategory === cat.id ? 'text-yellow-800 underline decoration-yellow-700 underline-offset-4' : 'text-gray-600'
+                        className={`cursor-pointer px-4 py-2 font-semibold transition hover:text-brand-core ${selectedCategory === cat.id ? 'text-brand-core underline decoration-yellow-700 underline-offset-4' : 'text-gray-600'
                             }`}
                     >
                         {cat.title}
@@ -68,7 +68,7 @@ const PostGrid: React.FC<PostGridProps> = ({ posts, categories, onPostClick, onF
                 ))}
 
                 <button
-                    className={`cursor-pointer border border-yellow-800 px-4 py-2 font-semibold text-yellow-800 transition hover:bg-yellow-800 hover:text-white md:px-6 md:py-2`}
+                    className={`cursor-pointer border border-brand-core px-4 py-2 font-semibold text-brand-core transition hover:bg-brand-core hover:text-white md:px-6 md:py-2`}
                     onClick={() => handleFilterChange('All')}
                 >
                     All Events & News
@@ -94,7 +94,7 @@ const PostGrid: React.FC<PostGridProps> = ({ posts, categories, onPostClick, onF
                             <h3 className=" mb-2 line-clamp-2 text-lg font-semibold md:text-xl">{post.title}</h3>
                             <div className="flex flex-wrap gap-2">
                                 {post.category_tags.map((ct) => (
-                                    <span className="rounded bg-yellow-500 px-2 py-1 text-xs text-white dark:bg-green-500" key={ct.id}>
+                                    <span className="rounded bg-yellow-500 px-2 py-1 text-xs text-white dark:bg-brand-core" key={ct.id}>
                                         {ct.category_tag.title}
                                     </span>
                                 ))}
@@ -122,7 +122,7 @@ const PostGrid: React.FC<PostGridProps> = ({ posts, categories, onPostClick, onF
                                 key={page}
                                 onClick={() => handlePageChange(page)}
                                 className={`min-w-[40px] rounded px-3 py-2 text-sm font-medium transition ${currentPage === page
-                                    ? 'bg-yellow-800 text-white dark:bg-green-600'
+                                    ? 'bg-brand-core text-white dark:bg-brand-core'
                                     : 'border border-gray-300 text-gray-700 hover:bg-gray-100'
                                     }`}
                             >

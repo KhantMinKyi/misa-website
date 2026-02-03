@@ -13,23 +13,23 @@ export default function FullScreenCarousel() {
         {
             id: 1,
             image: '/img/banner/banner_1.webp', // Replace with your image paths
-            title1: "Welcome to NISA",
-            title2: "Excellence in Education",
+            title1: "MANDALAY INTERNATIONAL SCHOOL OF ACUMEN IS",
+            title2: " PROUD TO OFFER CAMBRIDGE IGCSE",
             title3: "Join our Community",
         },
         {
             id: 2,
             image: '/img/banner/banner_2.webp',
-            title1: "Shape Your Future",
-            title2: "Learn with Passion",
+            title1: "SECONDARY SCHOOL",
+            title2: "Cambridge International Secondary 1 curriculum",
             title3: "Achieve Your Dreams",
         },
         {
             id: 3,
             image: '/img/banner/banner_1.webp',
-            title1: "Global Standards",
-            title2: "Expert Teachers",
-            title3: "Modern Facilities",
+            title1: "PRIMARY SCHOOL",
+            title2: "Primary School Curriculum is engineered for the holistic development",
+            title3: "of all its students",
         },
     ];
 
@@ -57,7 +57,7 @@ export default function FullScreenCarousel() {
                                 <div className="max-w-4xl space-y-4 text-white">
 
                                     {/* Title 1 (Small & Upper) */}
-                                    <h3 className="text-xl font-bold uppercase tracking-widest text-yellow-400 md:text-2xl">
+                                    <h3 className="text-xl font-bold uppercase tracking-widest text-brand md:text-2xl">
                                         {slide.title1}
                                     </h3>
 
@@ -73,7 +73,7 @@ export default function FullScreenCarousel() {
 
                                     {/* Optional Button */}
                                     <div className="pt-4">
-                                        <button className="rounded-full cursor-pointer bg-yellow-500 px-8 py-3 text-sm font-bold text-black transition hover:bg-yellow-400">
+                                        <button className="rounded-full cursor-pointer bg-brand-core px-8 py-3 text-sm font-bold text-whit hover:text-black transition hover:bg-brand">
                                             FIND OUT MORE
                                         </button>
                                     </div>

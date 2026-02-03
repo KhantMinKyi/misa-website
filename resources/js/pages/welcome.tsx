@@ -1,6 +1,7 @@
 
 
 import Carousel from '@/components/home/carousel';
+import ContactBanner from '@/components/home/contact-banner';
 import Gallery from '@/components/home/gallery';
 import Hero from '@/components/home/hero';
 import InfoSection from '@/components/home/info-section';
@@ -50,7 +51,7 @@ export default function Welcome({ posts, category_tags }: { posts: Post[], categ
 
     return (
         <>
-            <Head title="Welcome">
+            <Head title="Home">
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link
                     href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600"
@@ -70,6 +71,8 @@ export default function Welcome({ posts, category_tags }: { posts: Post[], categ
                 <div className='container mx-auto mt-20'>
                     <PostGrid posts={postsData} categories={categoryTagData} />
                 </div>
+                {/* <div className='h-96 bg-brand-core'></div> */}
+                <ContactBanner />
             </FrontendLayout>
         </>
     );

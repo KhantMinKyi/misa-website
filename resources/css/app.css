@@ -16,7 +16,15 @@
         'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
-    --color-primary: #f5d627;
+    --color-brand: #fcc552;
+    --color-brand-soft: #fee8b9;
+    --color-brand-core: #ce8e03;
+    --color-brand-dark: #463001;
+    --color-brand-light-dark: #463001;
+    --color-secondary-brand: #0343ce;
+    --color-secondary-brand-dark: #011746;
+    --color-secondary-brand-dark-50: #022674;
+    --color-secondary-brand-dark-900: #000819;
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
     --radius-sm: calc(var(--radius) - 4px);

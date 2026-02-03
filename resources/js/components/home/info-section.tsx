@@ -52,7 +52,7 @@ export default function InfoSection() {
                             className="flex flex-col items-center justify-center bg-white dark:bg-neutral-950 py-12 px-6 text-center shadow-lg transition-shadow hover:shadow-xl rounded-sm"
                         >
                             {/* Icon Wrapper (Gold Color) */}
-                            <div className="mb-6 text-yellow-600 dark:text-yellow-300">
+                            <div className="mb-6 text-brand-core dark:text-brand">
                                 {item.icon}
                             </div>
 

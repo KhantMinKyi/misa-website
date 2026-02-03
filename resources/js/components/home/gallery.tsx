@@ -35,7 +35,7 @@ export default function Gallery({ images }: GalleryProps) {
         <div className="container mx-auto px-4 py-10">
             <div className='text-4xl text-center my-10 '>Our Facilities</div>
             <div className='flex flex-row justify-end '>
-                <div className=' flex justify-center items-center text-yellow-800 hover:text-yellow-400'>
+                <div className=' flex justify-center items-center text-brand-core hover:text-brand'>
                     <Link href='#' className='text-lg  my-10   '>Click to View Gallery</Link> <FiChevronRight className='text-lg  ' />
                 </div>
             </div>
