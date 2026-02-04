@@ -18,7 +18,7 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const topBarRef = useRef<HTMLDivElement>(null);
 
-    const isActive = (path: string) => url === path;
+    const isActive = (path: string) => url.split('?')[0] === path;
     const handleLinkClick = () => setSidebarOpen(false);
     const toggleMenu = (menu: string) => {
         setExpandedMenu(expandedMenu === menu ? '' : menu);
@@ -165,9 +165,9 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                             <Link href="#"
                                 className={`transition border-r-2 px-6 py-3
                                     ${isActive('/alumni') ||
-                                        isActive('/alumni') ||
-                                        isActive('/alumni') ||
-                                        isActive('/alumni') ||
+                                        isActive('/news') ||
+                                        isActive('/gallery') ||
+                                        isActive('/calendar') ||
                                         isActive('/alumni') ||
                                         isActive('/alumni')
                                         ? `text-brand border-brand ${isScrolled ? '' : ''}`
@@ -181,14 +181,14 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                                     <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} ${isActive('/alumni') ? 'text-brand' : 'hover:text-brand'}`}>
                                         <Link href="/alumni" className='block px-6 py-2 transition-colors'>Alumni</Link>
                                     </li>
-                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} hover:text-brand`}>
-                                        <Link href="#" className='block px-6 py-2 transition-colors'>News</Link>
+                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} ${isActive('/news') ? 'text-brand' : 'hover:text-brand'}`}>
+                                        <Link href="/news" className='block px-6 py-2 transition-colors'>News</Link>
                                     </li>
-                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} hover:text-brand`}>
-                                        <Link href="#" className='block px-6 py-2 transition-colors'>Gallery</Link>
+                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} ${isActive('/gallery') ? 'text-brand' : 'hover:text-brand'}`}>
+                                        <Link href="/gallery" className='block px-6 py-2 transition-colors'>Gallery</Link>
                                     </li>
-                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} hover:text-brand`}>
-                                        <Link href="#" className='block px-6 py-2 transition-colors'>Calendar</Link>
+                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} ${isActive('/calendar') ? 'text-brand' : 'hover:text-brand'}`}>
+                                        <Link href="/calendar" className='block px-6 py-2 transition-colors'>Calendar</Link>
                                     </li>
                                     <li className='hover:text-brand'>
                                         <Link href="#" className='block px-6 py-2 transition-colors'>Facilities</Link>

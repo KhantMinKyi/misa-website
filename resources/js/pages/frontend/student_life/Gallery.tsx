@@ -4,42 +4,49 @@ import FrontendLayout from '@/layouts/frontend-layout'
 import { Head } from '@inertiajs/react'
 import React from 'react'
 import * as motion from 'motion/react-client';
-import HistoryBanner from '@/components/about_us/history'
-import AlumniBanner from '@/components/student_life/alumni/alumni-banner'
-const Alumni = () => {
+
+import { GalleryTypePaginate } from '@/types'
+import Gallery from '@/components/student_life/gallery/gallery'
+
+interface GalleryPageProps {
+    images: GalleryTypePaginate; // This must be the Paginated Object, not an array
+    showLink: boolean;
+}
+const GalleryPage = ({ images, showLink }: GalleryPageProps) => {
+
     return (
         <>
             <Head>
-                <title>Alumni | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Student Life Gallery | MISA Campus – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
-                    content="Today’s BFI represents an evolving community from SKT, BISA, NISA, and MISA. Connect with alumni, visit campus, read Quest magazine, and find out how to get involved."
+                    content="Explore the vibrant student life at MISA Campus. View photos of academic achievements, cultural events, sports, and daily life in our diverse learning community."
                 />
                 <meta
                     name="keywords"
-                    content="MISA Alumni, BFI Alumni, SKT, BISA, NISA, Mandalay school alumni, BFI community, volunteer, Quest magazine, alumnicoordinator"
+                    content="MISA gallery, student life Mandalay, MISA students, school events photos, BFI community gallery, student activities, school sports Mandalay, student arts"
                 />
                 <meta name="robots" content="index, follow" />
 
                 {/* Canonical */}
-                <link rel="canonical" href="https://misa.edu.mm/alumni" />
+                <link rel="canonical" href="https://misa.edu.mm/gallery" />
 
                 {/* Open Graph */}
-                <meta property="og:type" content="article" />
-                <meta property="og:title" content="Alumni | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Student Life Gallery | MISA Campus" />
                 <meta
                     property="og:description"
-                    content="Celebrating the diverse traditions of SKT, BISA, NISA, and MISA. Join our alumni community, connect with faculty, and celebrate our shared history."
+                    content="A visual journey through the student experience at MISA. From classroom moments to stage performances and community events, see our students in action."
                 />
-                <meta property="og:url" content="https://misa.edu.mm/alumni" />
+                <meta property="og:url" content="https://misa.edu.mm/gallery" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Alumni | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Student Life Gallery | MISA Campus" />
                 <meta
                     name="twitter:description"
-                    content="Today’s BFI represents an evolving community from SKT, BISA, NISA, and MISA. Connect with alumni and find out how to get involved."
+                    content="Explore the vibrant student life at MISA Campus. View photos of academic achievements, cultural events, and daily life in our community."
                 />
             </Head>
             <FrontendLayout>
@@ -64,16 +71,21 @@ const Alumni = () => {
                         >
                             <div className="relative z-10 flex flex-col items-center justify-center px-4 py-20 text-center md:py-40 lg:py-52">
                                 <img src="/img/bfi.webp" className="max-w-40" alt="" />
-                                <h2 className="font-merriweather mb-4 text-3xl font-bold md:text-5xl">Alumni</h2>
+                                <h2 className="font-merriweather mb-4 text-3xl font-bold md:text-5xl">Gallery
+                                </h2>
                                 {/* <p className="mb-6 max-w-2xl text-lg md:text-xl">Our path through innovation, challenge, and achievement.</p> */}
                             </div>
                         </motion.div>
                     </div>
-                    <AlumniBanner />
+                    <div className='container mx-auto mt-20'>
+                        {/* <PostGrid posts={postsData} categories={categoryTagData} /> */}
+                        <div className='text-4xl text-center my-10 font-bold text-gray-800 dark:text-brand'>Our Gallery</div>
+                        <Gallery images={images} showLink={showLink} />
+                    </div>
                 </div>
             </FrontendLayout>
         </>
     )
 }
 
-export default Alumni
+export default GalleryPage

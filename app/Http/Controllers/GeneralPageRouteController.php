@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Calendar;
 use App\Models\CategoryTag;
+use App\Models\Gallery;
 use App\Models\Post;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -13,6 +15,7 @@ class GeneralPageRouteController extends Controller
     public function getHomePage(Request $request)
     {
 
+        $images = Gallery::limit(8)->get();
         $current_post = request()->input('current_post');
         $query = Post::with(['category_tags.category_tag'])->where('status', 1)->limit(3);
         if ($current_post) {
@@ -24,6 +27,7 @@ class GeneralPageRouteController extends Controller
             'canRegister' => Features::enabled(Features::registration()),
             'posts' => $posts,
             'category_tags' => $category_tags,
+            'images' => $images,
         ]);
     }
     // About Us
@@ -55,5 +59,35 @@ class GeneralPageRouteController extends Controller
     public function getAlumniPage()
     {
         return Inertia::render('frontend/student_life/Alumni');
+    }
+    public function getNewsPage()
+    {
+        $current_post = request()->input('current_post');
+        $query = Post::with(['category_tags.category_tag'])->where('status', 1)->limit(3);
+        if ($current_post) {
+            $query->whereNot('id', $current_post); // apply limit only if present
+        }
+        $category_tags = CategoryTag::withCount('related_posts')->orderBy('created_at', 'desc')->get();
+        $posts = $query->orderBy('created_at', 'desc')->get();
+        return Inertia::render('frontend/student_life/News', [
+            'posts' => $posts,
+            'category_tags' => $category_tags,
+        ]);
+    }
+    public function getGalleryPage()
+    {
+        $images = Gallery::paginate(8);
+        return Inertia::render('frontend/student_life/Gallery', [
+            'images' => $images,
+            'showLink' => false
+        ]);
+    }
+    public function getCalendarPage()
+    {
+        $images = Calendar::paginate(4);
+        return Inertia::render('frontend/student_life/Calendar', [
+            'images' => $images,
+            'showLink' => false
+        ]);
     }
 }

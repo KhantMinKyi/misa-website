@@ -4,19 +4,16 @@ import { FaTimes } from 'react-icons/fa'; // Optional: for a visible close butto
 import { ChevronRight, } from 'lucide-react';
 import { FiChevronRight } from 'react-icons/fi';
 import { Link } from '@inertiajs/react';
+import { GalleryType } from '@/types';
 
-// Define the shape of your image data
-interface ImageItem {
-    id: number;
-    src: string;
-    alt?: string;
-}
+
 
 interface GalleryProps {
-    images: ImageItem[];
+    images: GalleryType[];
+    showLink: boolean
 }
 
-export default function Gallery({ images }: GalleryProps) {
+export default function Gallery({ images, showLink }: GalleryProps) {
     const [selectedId, setSelectedId] = useState<number | null>(null);
 
     // Lock body scroll when modal is open
@@ -35,9 +32,11 @@ export default function Gallery({ images }: GalleryProps) {
         <div className="container mx-auto px-4 py-10">
             <div className='text-4xl text-center my-10 '>Our Facilities</div>
             <div className='flex flex-row justify-end '>
-                <div className=' flex justify-center items-center text-brand-core hover:text-brand'>
-                    <Link href='#' className='text-lg  my-10   '>Click to View Gallery</Link> <FiChevronRight className='text-lg  ' />
-                </div>
+                {showLink &&
+                    <div className=' flex justify-center items-center text-brand-core hover:text-brand'>
+                        <Link href='#' className='text-lg  my-10   '>Click to View Gallery</Link> <FiChevronRight className='text-lg  ' />
+                    </div>
+                }
             </div>
             {/* --- THE GRID --- */}
             {/* 2 columns on mobile (grid-cols-2), 4 on large screens (lg:grid-cols-4) */}

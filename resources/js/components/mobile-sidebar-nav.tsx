@@ -16,7 +16,7 @@ const MobileSidebarNav: React.FC<MobileSidebarNavProps> = ({ isOpen, onClose, cu
     const sidebarRef = useRef<HTMLDivElement>(null);
     const url = currentUrl; // Declare the url variable
 
-    const isActive = (path: string) => currentUrl === path;
+    const isActive = (path: string) => url.split('?')[0] === path;
 
     // Determine which menu should be expanded based on current URL
     useEffect(() => {
@@ -239,17 +239,20 @@ const MobileSidebarNav: React.FC<MobileSidebarNavProps> = ({ isOpen, onClose, cu
                                     </Link>
                                 </li>
                                 <li className='border-b border-gray-700 hover:text-brand'>
-                                    <Link href='#' className='block px-6 py-2 transition-colors' onClick={handleLinkClick}>
+                                    <Link href='/news' className={`block px-6 py-2 transition-colors ${isActive('/news') ? 'text-brand' : ''
+                                        }`} onClick={handleLinkClick}>
                                         News
                                     </Link>
                                 </li>
                                 <li className='border-b border-gray-700 hover:text-brand'>
-                                    <Link href='#' className='block px-6 py-2 transition-colors' onClick={handleLinkClick}>
+                                    <Link href='/gallery' className={`block px-6 py-2 transition-colors ${isActive('/gallery') ? 'text-brand' : ''
+                                        }`} onClick={handleLinkClick}>
                                         Gallery
                                     </Link>
                                 </li>
                                 <li className='border-b border-gray-700 hover:text-brand'>
-                                    <Link href='#' className='block px-6 py-2 transition-colors' onClick={handleLinkClick}>
+                                    <Link href='/calendar' className={`block px-6 py-2 transition-colors ${isActive('/calendar') ? 'text-brand' : ''
+                                        }`} onClick={handleLinkClick}>
                                         Calendar
                                     </Link>
                                 </li>

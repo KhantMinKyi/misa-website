@@ -87,3 +87,41 @@ export interface Post {
     created_at: string;
     updated_at: string;
 }
+export interface GalleryType {
+    id: number;
+    src: string;
+    alt: src;
+    category_id: number;
+}
+export interface ImageItem {
+    id: number;
+    src: string;
+    alt?: string;
+    academic_year?: string;
+}
+
+export interface PaginationLink {
+    url: string | null;
+    label: string;
+    active: boolean;
+}
+
+// This is the structure Laravel sends for simplePaginate or paginate
+export interface GalleryTypePaginate {
+    data: ImageItem[]; // The actual array of images is here now
+    links: PaginationLink[]; // The pagination links
+    current_page: number;
+    last_page: number;
+    prev_page_url: string | null;
+    next_page_url: string | null;
+    total?: number; // 'total' is present in standard paginate(), not simplePaginate()
+}
+export interface CalendarTypePaginate {
+    data: ImageItem[]; // The actual array of images is here now
+    links: PaginationLink[]; // The pagination links
+    current_page: number;
+    last_page: number;
+    prev_page_url: string | null;
+    next_page_url: string | null;
+    total?: number; // 'total' is present in standard paginate(), not simplePaginate()
+}
