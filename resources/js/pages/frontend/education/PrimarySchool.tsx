@@ -11,11 +11,14 @@ import Result from '@/components/frontend/about_us/result'
 import UniversityAndColleges from '@/components/frontend/about_us/university-and-colleges'
 import KgBanner from '@/components/frontend/education/kindergarten/kg-banner'
 import ThemeSection from '@/components/frontend/education/kindergarten/theme-section'
-const Kindergarten = () => {
+import PrimarySchoolBanner from '@/components/frontend/education/primary/primary-school-banner'
+import PrimarySubjectsTable from '@/components/frontend/education/primary/primary-subject-table'
+import SubjectDetails from '@/components/frontend/education/primary/subject-details'
+const PrimarySchool = () => {
     return (
         <>
             <Head>
-                <title>Kindergarten | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Primary School | MISA Campus – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
@@ -28,7 +31,7 @@ const Kindergarten = () => {
                 <meta name="robots" content="index, follow" />
 
                 {/* Canonical - Ensure this URL matches your actual route */}
-                <link rel="canonical" href="https://misa.edu.mm/kindergarten-programs" />
+                <link rel="canonical" href="https://misa.edu.mm/primary-school-programs" />
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
@@ -37,7 +40,7 @@ const Kindergarten = () => {
                     property="og:description"
                     content="Enroll your child in MISA Kindergarten for a world-class early learning experience in Mandalay. Focusing on play, discovery, and fundamental skills."
                 />
-                <meta property="og:url" content="https://misa.edu.mm/kindergarten-programs" />
+                <meta property="og:url" content="https://misa.edu.mm/primary-school-programs" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
@@ -69,13 +72,14 @@ const Kindergarten = () => {
                         >
                             <div className="relative z-10 flex flex-col items-center justify-center px-4 py-20 text-center md:py-40 lg:py-52">
                                 <img src="/img/logo/misa.webp" className="max-w-40" alt="" />
-                                <h2 className="font-merriweather mb-4 text-3xl font-bold md:text-5xl">Kindergarten</h2>
+                                <h2 className="font-merriweather mb-4 text-3xl font-bold md:text-5xl">Primary School</h2>
                                 {/* <p className="mb-6 max-w-2xl text-lg md:text-xl">Our path through innovation, challenge, and achievement.</p> */}
                             </div>
                         </motion.div>
                     </div>
-                    <KgBanner />
-                    <ThemeSection />
+                    <PrimarySchoolBanner />
+                    <PrimarySubjectsTable />
+                    <SubjectDetails />
 
                 </div>
             </FrontendLayout>
@@ -83,4 +87,4 @@ const Kindergarten = () => {
     )
 }
 
-export default Kindergarten
+export default PrimarySchool

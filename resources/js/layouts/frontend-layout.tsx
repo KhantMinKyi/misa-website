@@ -104,17 +104,17 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                     {/* Logo appears when scrolled */}
                     {isScrolled && (
                         <div className='mr-8 flex-shrink-0'>
-                            <img src='/img/logo/misa_tagline.png' className='w-84 dark:hidden' alt="Logo" />
-                            <img src='/img/logo/misa_tagline.png' className='w-84 dark:block hidden' alt="Logo" />
+                            <img src='/img/logo/misa_tagline.png' className=' w-40 xl:w-84 dark:hidden' alt="Logo" />
+                            <img src='/img/logo/misa_tagline.png' className=' w-40 xl:w-84 dark:block hidden' alt="Logo" />
                         </div>
                     )}
                     <ul className={`flex items-center uppercase h-20 ${isScrolled ? 'justify-end flex-1' : 'justify-center'}`}>
                         <li className='  '>
                             <Link href='/'
-                                className={`transition border-r-2 px-6 py-3
+                                className={`transition border-r-2 px-6 py-3 
                                         ${isActive('/')
-                                        ? `text-brand border-brand ${isScrolled ? '' : ''}`
-                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300' : 'text-white hover:text-brand border-gray-600'}`}`
+                                        ? `text-brand border-brand ${isScrolled ? 'text-sm xl:text-base' : ''}`
+                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300 text-sm xl:text-base' : 'text-white hover:text-brand border-gray-600'}`}`
                                 }
                             >Home</Link>
                         </li>
@@ -127,8 +127,8 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                                         isActive('/sister-schools') ||
                                         isActive('/admin-team') ||
                                         isActive('/school-profile')
-                                        ? `text-brand border-brand ${isScrolled ? '' : ''}`
-                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300' : 'text-white hover:text-brand border-gray-600'}`}`
+                                        ? `text-brand border-brand ${isScrolled ? 'text-sm xl:text-base' : ''}`
+                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300 text-sm xl:text-base' : 'text-white hover:text-brand border-gray-600'}`}`
                                 }
                             >
                                 About us
@@ -169,8 +169,8 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                                         isActive('/gallery') ||
                                         isActive('/calendar') ||
                                         isActive('/facilities')
-                                        ? `text-brand border-brand ${isScrolled ? '' : ''}`
-                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300' : 'text-white hover:text-brand border-gray-600'}`}`
+                                        ? `text-brand border-brand ${isScrolled ? 'text-sm xl:text-base' : ''}`
+                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300 text-sm xl:text-base' : 'text-white hover:text-brand border-gray-600'}`}`
                                 }
                             >
                                 Student Life
@@ -200,12 +200,12 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                             <Link href="#"
                                 className={`transition border-r-2 px-6 py-3
                                     ${isActive('/kindergarten-programs') ||
-                                        isActive('/kindergarten-programs') ||
+                                        isActive('/primary-school-programs') ||
                                         isActive('/kindergarten-programs') ||
                                         isActive('/kindergarten-programs') ||
                                         isActive('/kindergarten-programs')
-                                        ? `text-brand border-brand ${isScrolled ? '' : ''}`
-                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300' : 'text-white hover:text-brand border-gray-600'}`}`
+                                        ? `text-brand border-brand ${isScrolled ? 'text-sm xl:text-base' : ''}`
+                                        : `${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300 text-sm xl:text-base' : 'text-white hover:text-brand border-gray-600'}`}`
                                 }
                             >
                                 Education
@@ -215,8 +215,8 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                                     <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} ${isActive('/kindergarten-programs') ? 'text-brand' : 'hover:text-brand'}`}>
                                         <Link href="/kindergarten-programs" className='block px-6 py-2 transition-colors'>Preschool</Link>
                                     </li>
-                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} hover:text-brand`}>
-                                        <Link href="#" className='block px-6 py-2 transition-colors'>Primary</Link>
+                                    <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} ${isActive('/primary-school-programs') ? 'text-brand' : 'hover:text-brand'}`}>
+                                        <Link href="/primary-school-programs" className='block px-6 py-2 transition-colors'>Primary</Link>
                                     </li>
                                     <li className={`border-b ${isScrolled ? 'border-gray-300' : 'border-gray-700'} hover:text-brand`}>
                                         <Link href="#" className='block px-6 py-2 transition-colors'>Secondary</Link>
@@ -229,7 +229,7 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                             </div>
                         </li>
                         <li className='relative group h-full flex items-center last:border-r-0'>
-                            <Link href="/about" className={`transition border-r-2 px-6 py-3 ${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300' : 'text-white hover:text-brand border-gray-600'}`}>
+                            <Link href="/about" className={`transition border-r-2 px-6 py-3 ${isScrolled ? 'text-secondary-brand-dark hover:text-brand border-gray-300 text-sm xl:text-base' : 'text-white hover:text-brand border-gray-600'}`}>
                                 Admission
                             </Link>
                             <div className={`absolute top-full left-0 w-48 shadow-lg hidden group-hover:block z-50 ${isScrolled ? 'bg-white text-secondary-brand-dark' : 'bg-secondary-brand-dark text-white'}`}>
@@ -250,10 +250,10 @@ const FrontendLayout = ({ children }: { children: React.ReactNode }) => {
                                 </ul>
                             </div>
                         </li>
-                        <li className={`border-r-2 px-6 py-3 hover:text-brand transition ${isScrolled ? 'text-secondary-brand-dark border-gray-300' : 'text-white border-gray-600'}`}>
+                        <li className={`border-r-2 px-6 py-3 hover:text-brand transition ${isScrolled ? 'text-secondary-brand-dark border-gray-300 text-sm xl:text-base' : 'text-white border-gray-600'}`}>
                             <Link href="/">Events & News</Link>
                         </li>
-                        <li className={`border-r-2 px-6 py-3 hover:text-brand transition last:border-r-0 ${isScrolled ? 'text-secondary-brand-dark border-gray-300' : 'text-white border-gray-600'}`}>
+                        <li className={`border-r-2 px-6 py-3 hover:text-brand transition last:border-r-0 ${isScrolled ? 'text-secondary-brand-dark border-gray-300 text-sm xl:text-base' : 'text-white border-gray-600'}`}>
                             <Link href="/">Contact</Link>
                         </li>
 
