@@ -17,11 +17,11 @@ const FacilityPage = ({ images, showLink }: FacilityPageProps) => {
     return (
         <>
             <Head>
-                <title>Our Facilities | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Our Facilities | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
-                    content="Discover the world-class facilities at MISA Campus. Explore our modern classrooms, science labs, libraries, sports grounds, and dedicated arts spaces designed to enhance student learning."
+                    content="Discover the world-class facilities at MISA. Explore our modern classrooms, science labs, libraries, sports grounds, and dedicated arts spaces designed to enhance student learning."
                 />
                 <meta
                     name="keywords"
@@ -34,19 +34,19 @@ const FacilityPage = ({ images, showLink }: FacilityPageProps) => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Our Facilities | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Our Facilities | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
-                    content="Take a tour of MISA Campus. From advanced technology labs to spacious recreational areas, see how our facilities support a holistic educational experience."
+                    content="Take a tour of MISA. From advanced technology labs to spacious recreational areas, see how our facilities support a holistic educational experience."
                 />
                 <meta property="og:url" content="https://misa.edu.mm/facilities" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Our Facilities | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Our Facilities | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
-                    content="Discover the world-class facilities at MISA Campus, including modern classrooms, labs, and sports grounds designed for student success."
+                    content="Discover the world-class facilities at MISA, including modern classrooms, labs, and sports grounds designed for student success."
                 />
             </Head>
             <FrontendLayout>

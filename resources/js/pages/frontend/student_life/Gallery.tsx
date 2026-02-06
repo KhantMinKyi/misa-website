@@ -17,11 +17,11 @@ const GalleryPage = ({ images, showLink }: GalleryPageProps) => {
     return (
         <>
             <Head>
-                <title>Student Life Gallery | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Student Life Gallery | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
-                    content="Explore the vibrant student life at MISA Campus. View photos of academic achievements, cultural events, sports, and daily life in our diverse learning community."
+                    content="Explore the vibrant student life at MISA. View photos of academic achievements, cultural events, sports, and daily life in our diverse learning community."
                 />
                 <meta
                     name="keywords"
@@ -34,7 +34,7 @@ const GalleryPage = ({ images, showLink }: GalleryPageProps) => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Student Life Gallery | MISA Campus" />
+                <meta property="og:title" content="Student Life Gallery | MISA" />
                 <meta
                     property="og:description"
                     content="A visual journey through the student experience at MISA. From classroom moments to stage performances and community events, see our students in action."
@@ -43,10 +43,10 @@ const GalleryPage = ({ images, showLink }: GalleryPageProps) => {
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Student Life Gallery | MISA Campus" />
+                <meta name="twitter:title" content="Student Life Gallery | MISA" />
                 <meta
                     name="twitter:description"
-                    content="Explore the vibrant student life at MISA Campus. View photos of academic achievements, cultural events, and daily life in our community."
+                    content="Explore the vibrant student life at MISA. View photos of academic achievements, cultural events, and daily life in our community."
                 />
             </Head>
             <FrontendLayout>

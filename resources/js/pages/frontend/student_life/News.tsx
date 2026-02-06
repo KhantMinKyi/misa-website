@@ -13,11 +13,11 @@ const News = ({ posts, category_tags }: { posts: Post[], category_tags: Category
     return (
         <>
             <Head>
-                <title> Events & News  | MISA Campus – Mandalay International School of Acumen</title>
+                <title> Events & News  | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
-                    content="Stay updated with the latest news, upcoming events, and important announcements from MISA Campus. Explore student achievements, school activities, and our academic calendar."
+                    content="Stay updated with the latest news, upcoming events, and important announcements from MISA. Explore student achievements, school activities, and our academic calendar."
                 />
                 <meta
                     name="keywords"
@@ -31,19 +31,19 @@ const News = ({ posts, category_tags }: { posts: Post[], category_tags: Category
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="News & Events | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="News & Events | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
-                    content="Keep up with the vibrant life at MISA Campus. Read about recent events, student success stories, and upcoming school activities in Mandalay."
+                    content="Keep up with the vibrant life at MISA. Read about recent events, student success stories, and upcoming school activities in Mandalay."
                 />
                 <meta property="og:url" content="https://misa.edu.mm/news-and-events" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="News & Events | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="News & Events | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
-                    content="Stay updated with the latest news, upcoming events, and important announcements from MISA Campus."
+                    content="Stay updated with the latest news, upcoming events, and important announcements from MISA."
                 />
             </Head>
             <FrontendLayout>

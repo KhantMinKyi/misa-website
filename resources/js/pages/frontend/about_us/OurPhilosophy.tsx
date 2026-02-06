@@ -9,7 +9,7 @@ const OurPhilosophy = () => {
     return (
         <>
             <Head>
-                <title>Our Philosophy | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Our Philosophy | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
@@ -17,7 +17,7 @@ const OurPhilosophy = () => {
                 />
                 <meta
                     name="keywords"
-                    content="MISA Campus Philosophy, Mandalay International School of Acumen, school Mandalay, education Mandalay, MISA campus 2010"
+                    content="MISA Philosophy, Mandalay International School of Acumen, school Mandalay, education Mandalay, MISA campus 2010"
                 />
                 <meta name="robots" content="index, follow" />
 
@@ -26,7 +26,7 @@ const OurPhilosophy = () => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content="Our Philosophy | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Our Philosophy | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
                     content="Our curriculum is designed to ignite curiosity, encourage critical thinking, and instill a passion for inquiry-based learning. We empower our students to tackle real-world challenges and contribute meaningfully to a rapidly evolving global society."
@@ -34,7 +34,7 @@ const OurPhilosophy = () => {
                 <meta property="og:url" content="https://misa.edu.mm/our-philosophy" />
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Our Philosophy | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Our Philosophy | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
                     content="Our curriculum is designed to ignite curiosity, encourage critical thinking, and instill a passion for inquiry-based learning. We empower our students to tackle real-world challenges and contribute meaningfully to a rapidly evolving global society."

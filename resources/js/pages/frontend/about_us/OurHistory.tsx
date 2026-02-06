@@ -9,15 +9,15 @@ const OurHistory = () => {
     return (
         <>
             <Head>
-                <title>Our History | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Our History | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
-                    content="MISA Campus was purpose-built in 2010 and is located on 58th Street, between 27th and 28th Streets, in Mandalay. The campus offers a spacious, comfortable learning environment with modern facilities and easy city access."
+                    content="MISA was purpose-built in 2010 and is located on 58th Street, between 27th and 28th Streets, in Mandalay. The campus offers a spacious, comfortable learning environment with modern facilities and easy city access."
                 />
                 <meta
                     name="keywords"
-                    content="MISA Campus history, Mandalay International School of Acumen, school Mandalay, education Mandalay, MISA campus 2010"
+                    content="MISA history, Mandalay International School of Acumen, school Mandalay, education Mandalay, MISA campus 2010"
                 />
                 <meta name="robots" content="index, follow" />
 
@@ -26,18 +26,18 @@ const OurHistory = () => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content="Our History | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Our History | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
-                    content="Learn about the history of MISA Campus in Mandalay, built in 2010 with modern facilities and a strategic city location."
+                    content="Learn about the history of MISA in Mandalay, built in 2010 with modern facilities and a strategic city location."
                 />
                 <meta property="og:url" content="https://misa.edu.mm/our-history" />
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Our History | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Our History | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
-                    content="Discover the history of MISA Campus in Mandalay, purpose-built in 2010 to provide a modern, spacious learning environment."
+                    content="Discover the history of MISA in Mandalay, purpose-built in 2010 to provide a modern, spacious learning environment."
                 />
             </Head>
             <FrontendLayout>

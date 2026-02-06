@@ -7,7 +7,7 @@ const SisterSchools = () => {
     return (
         <>
             <Head>
-                <title>Our Sister Schools | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Our Sister Schools | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
@@ -24,7 +24,7 @@ const SisterSchools = () => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content="Our Sister Schools | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Our Sister Schools | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
                     content="Explore MISA's sister schools: SKT International School (Riverside & City Campus) in Yangon, NISA in Naypyitaw, and the BFI head office in Yangon. Delivering top-quality international education across Myanmar."
@@ -32,7 +32,7 @@ const SisterSchools = () => {
                 <meta property="og:url" content="https://misa.edu.mm/sister-schools" />
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Our Sister Schools | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Our Sister Schools | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
                     content="Learn about MISA's sister schools: SKT International School (Riverside & City Campus) in Yangon, NISA in Naypyitaw, and BFI head office in Yangon, providing high-quality international education."

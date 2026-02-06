@@ -17,11 +17,11 @@ const CalendarPage = ({ images, showLink }: CalendarPageProps) => {
     return (
         <>
             <Head>
-                <title>Academic Calendar | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Academic Calendar | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
-                    content="View the official academic calendar for MISA Campus. Stay informed about term dates, school holidays, examination schedules, and key academic events throughout the year."
+                    content="View the official academic calendar for MISA. Stay informed about term dates, school holidays, examination schedules, and key academic events throughout the year."
                 />
                 <meta
                     name="keywords"
@@ -34,19 +34,19 @@ const CalendarPage = ({ images, showLink }: CalendarPageProps) => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Academic Calendar | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Academic Calendar | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
-                    content="Plan your year with the MISA Campus academic calendar. Access important dates for school terms, holidays, and upcoming academic milestones."
+                    content="Plan your year with the MISA academic calendar. Access important dates for school terms, holidays, and upcoming academic milestones."
                 />
                 <meta property="og:url" content="https://misa.edu.mm/calendar" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Academic Calendar | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Academic Calendar | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
-                    content="View the official academic calendar for MISA Campus. Stay informed about term dates, school holidays, and examination schedules."
+                    content="View the official academic calendar for MISA. Stay informed about term dates, school holidays, and examination schedules."
                 />
             </Head>
             <FrontendLayout>

@@ -10,7 +10,7 @@ const Alumni = () => {
     return (
         <>
             <Head>
-                <title>Alumni | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Alumni | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
@@ -27,7 +27,7 @@ const Alumni = () => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content="Alumni | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Alumni | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
                     content="Celebrating the diverse traditions of SKT, BISA, NISA, and MISA. Join our alumni community, connect with faculty, and celebrate our shared history."
@@ -36,7 +36,7 @@ const Alumni = () => {
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Alumni | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Alumni | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
                     content="Today’s BFI represents an evolving community from SKT, BISA, NISA, and MISA. Connect with alumni and find out how to get involved."

@@ -9,7 +9,7 @@ const AdminTeam = () => {
     return (
         <>
             <Head>
-                <title>Admin Team | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Admin Team | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
@@ -26,7 +26,7 @@ const AdminTeam = () => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content="Admin Team | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Admin Team | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
                     content="Learn about the Administration Team at MISA, supporting school operations, student services, and academic excellence."
@@ -34,7 +34,7 @@ const AdminTeam = () => {
                 <meta property="og:url" content="https://misa.edu.mm/admin-team" />
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Admin Team | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Admin Team | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
                     content="Discover the Administration Team at MISA, dedicated to supporting students, staff, and school operations."

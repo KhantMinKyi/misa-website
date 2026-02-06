@@ -18,36 +18,36 @@ const PrimarySchool = () => {
     return (
         <>
             <Head>
-                <title>Primary School | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Primary School | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
-                    content="MISA Kindergarten provides a nurturing, play-based learning environment for early years education in Mandalay. Our program focuses on holistic development, creativity, and social skills in a safe, modern facility."
+                    content="MISA Primary School offers a robust academic program in Mandalay, fostering critical thinking and a love for learning. Our curriculum builds a strong foundation in core subjects, personal growth, and global awareness."
                 />
                 <meta
                     name="keywords"
-                    content="Kindergarten Mandalay, preschool education, early years foundation, MISA kindergarten, international preschool Mandalay, child development, KG admissions"
+                    content="Primary School Mandalay, elementary education, international primary school, MISA primary, student development, academic excellence, primary admissions Mandalay"
                 />
                 <meta name="robots" content="index, follow" />
 
-                {/* Canonical - Ensure this URL matches your actual route */}
+                {/* Canonical */}
                 <link rel="canonical" href="https://misa.edu.mm/primary-school-programs" />
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Kindergarten | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Primary School | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
-                    content="Enroll your child in MISA Kindergarten for a world-class early learning experience in Mandalay. Focusing on play, discovery, and fundamental skills."
+                    content="Discover MISA Primary School in Mandalay. We provide a comprehensive educational experience that prepares students for future academic success through a balanced and engaging curriculum."
                 />
                 <meta property="og:url" content="https://misa.edu.mm/primary-school-programs" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Kindergarten | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Primary School | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
-                    content="MISA Kindergarten provides a nurturing, play-based learning environment for early years education in Mandalay."
+                    content="MISA Primary School offers a robust academic program in Mandalay, fostering critical thinking and a love for learning."
                 />
             </Head>
             <FrontendLayout>

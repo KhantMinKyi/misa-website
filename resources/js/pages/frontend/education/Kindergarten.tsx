@@ -15,7 +15,7 @@ const Kindergarten = () => {
     return (
         <>
             <Head>
-                <title>Kindergarten | MISA Campus – Mandalay International School of Acumen</title>
+                <title>Kindergarten | MISA – Mandalay International School of Acumen</title>
                 {/* SEO Meta */}
                 <meta
                     name="description"
@@ -32,7 +32,7 @@ const Kindergarten = () => {
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Kindergarten | MISA Campus – Mandalay International School of Acumen" />
+                <meta property="og:title" content="Kindergarten | MISA – Mandalay International School of Acumen" />
                 <meta
                     property="og:description"
                     content="Enroll your child in MISA Kindergarten for a world-class early learning experience in Mandalay. Focusing on play, discovery, and fundamental skills."
@@ -41,7 +41,7 @@ const Kindergarten = () => {
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Kindergarten | MISA Campus – Mandalay International School of Acumen" />
+                <meta name="twitter:title" content="Kindergarten | MISA – Mandalay International School of Acumen" />
                 <meta
                     name="twitter:description"
                     content="MISA Kindergarten provides a nurturing, play-based learning environment for early years education in Mandalay."
