@@ -3,7 +3,7 @@ import FrontendLayout from '@/layouts/frontend-layout'
 import { Head } from '@inertiajs/react'
 import React from 'react'
 import * as motion from 'motion/react-client';
-import VmvStatus from '@/components/about_us/vmv-status'
+import VmvStatus from '@/components/frontend/about_us/vmv-status'
 const OurMissionVision = () => {
     return (
         <>

@@ -1,12 +1,12 @@
-import InfoSection from '@/components/home/info-section'
-import Information from '@/components/home/information'
+import InfoSection from '@/components/frontend/home/info-section'
+import Information from '@/components/frontend/home/information'
 import FrontendLayout from '@/layouts/frontend-layout'
 import { Head } from '@inertiajs/react'
 import React from 'react'
 import * as motion from 'motion/react-client';
 
 import { GalleryTypePaginate } from '@/types'
-import Gallery from '@/components/student_life/gallery/gallery'
+import Gallery from '@/components/frontend/student_life/gallery/gallery'
 
 interface GalleryPageProps {
     images: GalleryTypePaginate; // This must be the Paginated Object, not an array

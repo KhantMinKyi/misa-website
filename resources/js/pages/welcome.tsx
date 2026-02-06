@@ -1,12 +1,12 @@
 
 
-import Carousel from '@/components/home/carousel';
-import ContactBanner from '@/components/home/contact-banner';
-import Gallery from '@/components/home/gallery';
-import Hero from '@/components/home/hero';
-import InfoSection from '@/components/home/info-section';
-import Information from '@/components/home/information';
-import PostGrid from '@/components/home/post-grid';
+import Carousel from '@/components/frontend/home/carousel';
+import ContactBanner from '@/components/frontend/home/contact-banner';
+import Gallery from '@/components/frontend/home/gallery';
+import Hero from '@/components/frontend/home/hero';
+import InfoSection from '@/components/frontend/home/info-section';
+import Information from '@/components/frontend/home/information';
+import PostGrid from '@/components/frontend/home/post-grid';
 import FrontendLayout from '@/layouts/frontend-layout';
 
 import { CategoryTag, FacilityType, GalleryType, Post, type SharedData } from '@/types';

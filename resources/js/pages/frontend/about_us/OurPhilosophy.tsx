@@ -1,10 +1,10 @@
-import InfoSection from '@/components/home/info-section'
-import Information from '@/components/home/information'
+import InfoSection from '@/components/frontend/home/info-section'
+import Information from '@/components/frontend/home/information'
 import FrontendLayout from '@/layouts/frontend-layout'
 import { Head } from '@inertiajs/react'
 import React from 'react'
 import * as motion from 'motion/react-client';
-import HistoryBanner from '@/components/about_us/history'
+import HistoryBanner from '@/components/frontend/about_us/history'
 const OurPhilosophy = () => {
     return (
         <>

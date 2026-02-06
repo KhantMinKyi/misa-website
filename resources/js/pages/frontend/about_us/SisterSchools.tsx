@@ -1,4 +1,4 @@
-import SisterSchoolSection from '@/components/about_us/sister-school-section'
+import SisterSchoolSection from '@/components/frontend/about_us/sister-school-section'
 import FrontendLayout from '@/layouts/frontend-layout'
 import { Head } from '@inertiajs/react'
 import React from 'react'

@@ -1,14 +1,14 @@
-import InfoSection from '@/components/home/info-section'
-import Information from '@/components/home/information'
+import InfoSection from '@/components/frontend/home/info-section'
+import Information from '@/components/frontend/home/information'
 import FrontendLayout from '@/layouts/frontend-layout'
 import { Head } from '@inertiajs/react'
 import React from 'react'
 import * as motion from 'motion/react-client';
-import HistoryBanner from '@/components/about_us/history'
-import SchoolProfileBanner from '@/components/about_us/school-profil-banner'
-import Grading from '@/components/about_us/grading'
-import Result from '@/components/about_us/result'
-import UniversityAndColleges from '@/components/about_us/university-and-colleges'
+import HistoryBanner from '@/components/frontend/about_us/history'
+import SchoolProfileBanner from '@/components/frontend/about_us/school-profil-banner'
+import Grading from '@/components/frontend/about_us/grading'
+import Result from '@/components/frontend/about_us/result'
+import UniversityAndColleges from '@/components/frontend/about_us/university-and-colleges'
 const SchoolProfile = () => {
     return (
         <>

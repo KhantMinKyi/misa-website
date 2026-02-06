@@ -1,10 +1,10 @@
-import SisterSchoolSection from '@/components/about_us/sister-school-section'
+import SisterSchoolSection from '@/components/frontend/about_us/sister-school-section'
 import FrontendLayout from '@/layouts/frontend-layout'
 import { Head } from '@inertiajs/react'
 import React from 'react'
 import * as motion from 'motion/react-client';
-import AdminTeamSection from '@/components/about_us/admin-team-section';
-import HeadOfSchoolSection from '@/components/about_us/head-of-schools-section';
+import AdminTeamSection from '@/components/frontend/about_us/admin-team-section';
+import HeadOfSchoolSection from '@/components/frontend/about_us/head-of-schools-section';
 const AdminTeam = () => {
     return (
         <>

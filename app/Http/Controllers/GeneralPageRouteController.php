@@ -99,4 +99,9 @@ class GeneralPageRouteController extends Controller
             'showLink' => false
         ]);
     }
+    // Education
+    public function getKGPage()
+    {
+        return Inertia::render('frontend/education/Kindergarten');
+    }
 }
